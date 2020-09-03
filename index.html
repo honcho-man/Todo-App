@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="app-title">
+            <h1>
+                <i class="fa fa-pen-nib"></i> Todo List</h1>
+        </div>
+    </div>
+    <div class="actns">
+        <button onclick="userSettings()" class="item user">
+            <i class="fa fa-user"></i>
+            <p></p>
+        </button>
+        <button onclick="Tasks()" class="item tasks">
+            <p>Tasks</p>
+        </button>
+    </div>
+
+    <div class="user-settings" id="userSettings" style="display: none;">
+        <button onclick="resetUser()" class="settings">
+        <p><i class="fa fa-user-plus"></i> Change User</p>    
+    </button>
+        <button class="settings">
+        <p><i class="fa fa-question-circle"></i> Help</p>
+    </button>
+    </div>
+
+    <div class="tasks-items" id="tasksItems">
+        <button class="todo">
+            <p>go to school</p>
+        </button>
+    </div>
+
+
+
+
+    <script src="scripts/tasks.js"></script>
+</body>
+
+</html>
