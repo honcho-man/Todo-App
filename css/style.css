@@ -86,9 +86,34 @@ p {
 .todo {
     font-size: 18px;
     border: 1px solid black;
-    border-top: none;
-    width: 100%;
-    text-align: left;
-    padding: 15px;
     background: white;
+    text-transform: capitalize;
+    list-style-type: decimal;
+}
+
+li {
+    padding: 15px;
+}
+
+form {
+    width: 100%;
+    display: flex;
+}
+
+input {
+    background: white;
+    border: 1px solid black;
+    padding: 15px;
+    border-top: none;
+}
+
+input[type=text] {
+    width: 50%;
+    border-right: none;
+    padding-right: 28px;
+}
+
+input[type=submit] {
+    width: 50%;
+    text-transform: capitalize;
 }
